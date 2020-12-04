@@ -67,7 +67,7 @@ function drawBricks() {
 
                 ctx.beginPath();
                 ctx.rect(brickX, brickY, brickWidth, brickHeight);
-                ctx.fillStyle = "#00095DD";
+                ctx.fillStyle = "#000678D";
                 ctx.fill();
                 ctx.strokeStyle = 'rgba(0,0,255,0.5)';
                 ctx.stroke();
