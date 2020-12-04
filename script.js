@@ -67,7 +67,7 @@ function drawBricks() {
 
                 ctx.beginPath();
                 ctx.rect(brickX, brickY, brickWidth, brickHeight);
-                ctx.fillStyle = "#000678D";
+                ctx.fillStyle = "#0095DD";
                 ctx.fill();
                 ctx.strokeStyle = 'rgba(0,0,255,0.5)';
                 ctx.stroke();
@@ -141,7 +141,7 @@ function drawScore() {
 
 function drawLives() {
     ctx.font = "16px Arial";
-    ctx.fillStyle = "#0095D8";
+    ctx.fillStyle = "#0095DD";
     ctx.fillText("Lives:" + lives, canvas.width - 65, 20);
 
 }
@@ -164,8 +164,7 @@ function draw() {
         } else {
             lives = lives - 1;
             if (!lives) {
-                alert("****GAME OVER:(****
-                      Better luck next time!!!!");
+                alert("****GAME OVER:(**** 'Better luck next time!!!!' ");
                 document.location.reload();
             } else {
                 x = canvas.width / 2;
