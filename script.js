@@ -141,7 +141,7 @@ function drawScore() {
 
 function drawLives() {
     ctx.font = "16px Arial";
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#0095D8";
     ctx.fillText("Lives:" + lives, canvas.width - 65, 20);
 
 }
@@ -164,7 +164,8 @@ function draw() {
         } else {
             lives = lives - 1;
             if (!lives) {
-                alert("GAME OVER");
+                alert("****GAME OVER:(****
+                      Better luck next time!!!!");
                 document.location.reload();
             } else {
                 x = canvas.width / 2;
